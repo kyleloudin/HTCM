@@ -1,19 +1,3 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  tailwind,
-  nodejs,
-  git,
-  threejs,
-} from "../assets";
-
 export const navLinks = [
   {
     id: "about",
@@ -32,37 +16,36 @@ export const navLinks = [
 const services = [
   {
     title: "Love",
-    icon: web,
+    icon: "IMG_0498.PNG",
   },
   {
     title: "Purity",
-    icon: web,
+    icon: "IMG_0497.PNG",
   },
   {
     title: "Truth",
-    icon: creator,
+    icon: "IMG_0496.PNG",
   },
   {
     title: "Soul",
-    icon: web,
+    icon: "IMG_0495.PNG",
   },
   {
     title: "Compassion",
-    icon: backend,
+    icon: "IMG_0494.PNG",
   },
   {
     title: "Vibration",
-    icon: mobile,
+    icon: "IMG_0493.PNG",
   },
   {
     title: "Connection",
-    icon: web,
+    icon: "IMG_0492.PNG",
   },
   {
     title: "Human",
-    icon: web,
+    icon: "IMG_0491.PNG",
   },
 ];
-
 
 export { services };
