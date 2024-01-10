@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo1, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -21,7 +21,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={"public/logo2.svg"} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={"/logo2.svg"} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] highlight font-bold cursor pointer flex">
             High&nbsp;
             <span className="sm:block hidden">| Thread | Count | Media</span>

@@ -48,10 +48,10 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden justify-center items-center">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl "
+        className="flex-[0.75] p-8 rounded-2xl "
       >
         <p className={styles.sectionSubText}>Stay Threaded</p>
-        <h3 className={styles.sectionHeadText}>Contact Us.</h3>
+        <h3 className={`${styles.sectionHeadText} text-secondary lighting mt-4`}>Contact Us.</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -65,7 +65,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="green-pink-gradient p-[1px] rounded-[20px] shadow-card py-4 px-6 placeholder:text-primary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -76,23 +76,23 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="green-pink-gradient p-[1px] rounded-[20px] shadow-card py-4 px-6 placeholder:text-primary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-              rows="7"
+              rows="3"
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="green-pink-gradient p-[1px] rounded-[20px] shadow-card py-4 px-6 placeholder:text-primary text-white rounded-lg outline-none border-none font-medium "
             />
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline=none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-tertiary green-pink-gradient py-3 px-8 outline=none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? "...Sending" : "Send"}
           </button>
